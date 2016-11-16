@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Form</title>
+	<link rel="stylesheet" href="/node_modules/semantic-ui-css/semantic.css">
+	<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="ui inverted menu">
+		<a class="active item" href="/index.html"><font><font>Formulaire</font></font></a>
+		<a class="item" href="/tab.html"><font><font>Tab Form</font></font></a>
+	</div>
+	
+	<div class="ui inverted segment">
+		<div class="ui inverted form">
+		    <form action = "/process_post" method = "POST" class="ui form">
+				<div class="two fields">
+					<div class="field">
+						<label for="user_name">User Name</label>
+						<input name="user_name" type="text" id="user_name">
+					</div>
+					<div class="field">
+						<label for="password">Password</label>
+						<input name="password" type="password" id="password">
+					</div>
+				</div>
+				<button class="ui submit button" type="submit" value="submit">Submit</button>
+			</div>
+		</form>
+	</div>
+	
+	<!-- fin de votre html -->
+	<script src="/node_modules/jquery/dist/jquery.js"></script>
+	<script src="/node_modules/showdown/dist/showdown.js"></script>
+	<script src="/bcrypthash.js"></script>
+	<script src="/bcryptcompare.js"></script>
+</body>
+</html> 
